@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#navbar{
+    height: 4rem;
+    width: 100vw ;
+    background-color: #be3144;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    position: fixed;
+}
+nav ul{
+    list-style: none;
+    
+}
+nav ul li{
+   display: inline-block; 
+   padding: 1.4rem 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ede8e8;
+    font-family: Impact, sans-serif;
+    transition: all 0.3s ease 0s;
+}
+nav ul li a:hover{
+    color: #2d2e31;
+}
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+   
+}
+#welcome-section h1{
+    text-align: center;
+    padding-top: 20rem;
+    color: #ede8e8;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#welcome-section p{
+    text-align: center;
+    padding-top: 1rem;
+    color: #be3144;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+#projects{
+    width: 100%;
+    background-color: #45567d;
+}
+#projects h2{
+    text-align: center;
+    color: #ede8e8;
+    font-size: 3rem;
+    padding-top: 5rem;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+ 
+.container img {
+    width: 25%;
+    height: 300px;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+@media screen and (max-width:1400px) {
+   .container img{
+    width: 50%;
+   }
+    
+}
+.more{
+    display: block;
+    margin: 40px auto;
+    width: 200px;
+    padding: 15px;
+    font-size: 23px;
+    background: #2d2e31;
+    color: #ede8e8;
+    border: 3px solid gainsboro;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease all;
+}
+.more:hover{
+    background-color: #be3144;
+    color: black;
+}
+#projects a{
+    text-decoration: none;
+    color: #ede8e8;
+}
+.space{
+    width: 100%;
+    height: 40px;
+    background-color: #45567d;
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #303841;
+}
+ #contact h3{
+    padding-top: 12rem;
+    padding-bottom: 4rem ;
+    font-size: 4.8rem;
+    color: #ede8e8;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ #contact p i{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: #ede8e8;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ #contact{
+    display: inline-block;
+    text-align: center;
+ }
+ .contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    padding-bottom: 15rem;
+  }
+ .contact-links a{
+   text-decoration: none;
+   color: white;
+   padding: 0 2rem;
+   font-size: 2rem;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   transition: 0.3s ease 0s;
+   
+ }
+ .contact-links a:hover{
+    color: #be3144;
+    transform: translateY(8px);
+ }
+ .footer-section{
+    width: 100%;
+    height: 4rem;
+    background-color: #303841;
+ }
+ footer p{
+    padding-top: 1.3rem;
+    text-align: center;
+    color: #ede8e8;
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif;
+    border-top: #be3144 solid 5px;
+ }
+ footer a{
+    text-decoration: none;
+    color: white;
+ }
+ footer a:hover{
+    color: #be3144;
+ }
+ 
+ @media screen and (max-width:700px) {
+    html{
+        font-size: 75%;
+    }
+    .contact-links{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    #welcome-section h1{
+        padding-top: 25rem
+    }
+    #contact h3{
+        margin-top: 5rem;
+    }
+}
+@media screen and (max-width:500px){
+    html{
+        font-size: 60%;
+    }
+    #welcome-section h1{
+        padding-top: 38rem
+    }
+    #contact h3{
+        margin-top: 15rem;
+    }
+    .container img{
+        width: 100%;
+    }
+}
